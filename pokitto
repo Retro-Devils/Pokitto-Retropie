@@ -1,6 +1,6 @@
 #!/bin/bash
 xset -dpms s off s noblank
-matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
+matchbox-window-manager -use_titlebar no -use_cursor no &
 qjoypad "pokitto" &
 cd /opt/retropie/emulators/pokitto/
 /opt/retropie/emulators/b-em-pico-pi/xbeeb -disc "\$1"
