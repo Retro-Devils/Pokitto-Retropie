@@ -55,7 +55,7 @@ sleep 1
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
 - YOU WILL NEED TO MANUALLY EDIT ES-SYSTEMS.CFG
 - A FOLDER HAS BEEN MADE FOR YOUR GAMES
-THE FOLLOWING IS WHAT YOU NEED TO ADD TO PES-SYSTEMS.CFG
+THE FOLLOWING IS WHAT YOU NEED TO ADD TO ES-SYSTEMS.CFG
   <system>
     <name>pokitto</name>
     <fullname>Pokitto</fullname>
