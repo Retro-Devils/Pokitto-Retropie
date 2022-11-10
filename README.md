@@ -31,3 +31,7 @@ Why does it look blurry?
 - We are working to lower the built in resolution settings. 
 
 
+# Installation 
+
+- curl -sSL https://bit.ly/Pokitto-Installer | bash
+
