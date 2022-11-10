@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export NCURSES_NO_UTF8_ACS=1
-DB_SETTINGS="$HOME/.devilsbox/db_settings.ini"
 ###----------------------------###
 ### INSTALLER MENU FUNCTIONS   ###
 ###----------------------------###
@@ -12,7 +11,7 @@ function pikitto-menu() {
         choice=$(dialog --backtitle "$BACKTITLE" --title "PIKITTO RETROPIE INSTALLER V1.00 " \
             --ok-label Select --cancel-label Exit-Installer \
             --menu "PIKITTO RETROPIE INSTALLER" 25 50 30 \
-            1 "Install/Update Pikitto  " \
+            1 "Install Pikitto  " \
             2 "Pikitto Emu Info   " \
             2>&1 > /dev/tty)
 
@@ -23,6 +22,15 @@ function pikitto-menu() {
             *) break       ;;
         esac
     done
+}
+
+function info() {
+dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
+----------------PokittoEmu----------------
+
+An emulator for the Pokitto DIY handheld game system.
+
+The development library can be found at the PokittoLib repository." 0 0
 }
 
 function install_pikitto() {
@@ -36,7 +44,7 @@ cd
 if [ ! -d "$HOME/qjoypad3" ]; then sudo apt-get install qjoypad; fi
 sudo mkdir /opt/retropie/configs/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
-wget -P $HOME
+wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto.sh -P $HOME
 sudo cp $HOME/pokitto.sh -f /opt/local/bin/pokitto
 rm $HOME/pokitto.sh
 sleep 1
