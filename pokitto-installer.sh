@@ -55,13 +55,13 @@ sleep 1
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
 - YOU WILL NEED TO MANUALLY EDIT ES-SYSTEMS.CFG
 - A FOLDER HAS BEEN MADE FOR YOUR GAMES
-THE FOLLOWING IS WGHAT YOU NEED TO ADD TO PES-SYSTEMS.CFG
-   <system>
+THE FOLLOWING IS WHAT YOU NEED TO ADD TO PES-SYSTEMS.CFG
+  <system>
     <name>pokitto</name>
     <fullname>Pokitto</fullname>
     <path>/home/pi/RetroPie/roms/pokitto</path>
     <extension>.BIN .bin </extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pokitto %ROM%</command>
+    <command>pokitto %ROM%</command>
     <platform>pokitto</platform>
     <theme>pokitto</theme>
   </system>" 0 0
