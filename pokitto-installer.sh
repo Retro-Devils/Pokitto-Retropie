@@ -57,6 +57,7 @@ sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
 sudo chmod -R 755 /opt/retropie/configs/pokitto/*
 sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
+sudo chmod 755 /usr/local/bin/pokitto
 sleep 1
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
 - YOU WILL NEED TO MANUALLY EDIT ES-SYSTEMS.CFG
