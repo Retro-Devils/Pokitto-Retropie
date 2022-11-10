@@ -46,15 +46,16 @@ echo "
 CHECK COMPLETE
 -------------------------------------" 
 sleep 3
-sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators/
-sudo unzip /opt/retropie/emulators/pokitto.zip
-sudo cp -R $HOME/pokitto /opt/retropie/emulators/
-sudo rm /opt/retropie/emulators/pokitto.zip
-sudo chmod -R 755 /opt/retropie/emulators/pokitto
-cd /opt/retropie/emulators/pokitto
-sudo make
+sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P $HOME/
+sudo unzip $HOME/pokitto.zip
+rm $HOME/pokitto.zip
+cd $HOME/pokitto
+make
 sleep 1
 cd
+sudo cp -R $HOME/pokitto /opt/retropie/emulators/
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
+rm -R $HOME/pokitto
 echo "
 Installing/Checking For Dependencies
 -------------------------------------" 
