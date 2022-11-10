@@ -37,9 +37,10 @@ function install_pokitto() {
 if [ -d "/opt/retropie/emulators/pokitto" ]; then sudo rm -R /opt/retropie/emulators/pokitto; fi
 if [ -d "/opt/retropie/configs/pokitto" ]; then sudo rm -R /opt/retropie/configs/pokitto; fi
 if [ -f "/usr/local/bin/pokitto" ]; then sudo rm -R /usr/local/bin/pokitto; fi
-wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators/
-unzip /opt/retropie/emulators/pokitto.zip
-rm /opt/retropie/emulators/pokitto.zip
+sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators/
+sudo unzip /opt/retropie/emulators/pokitto.zip
+sudo mv -R $HOME/pokitto -P /opt/retropie/emulators
+rm $HOME/pokitto.zip
 sudo chmod -R 755 /opt/retropie/emulators/pokitto
 cd /opt/retropie/emulators/pokitto
 make
