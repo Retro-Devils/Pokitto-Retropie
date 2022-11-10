@@ -46,46 +46,25 @@ sudo apt-get install sdl1
 sudo mkdir /opt/retropie/configs/pokitto
 mkdir $HOME/RetroPie/roms/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
-wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/.qjoypad3/
+wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto.lyt -P $HOME/.qjoypad3/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
 sudo chmod -R 755 /opt/retropie/configs/pokitto/
 sleep 1
-    local choice
-
-    while true; do
-        choice=$(dialog --backtitle "$BACKTITLE" --title "POKITTO RETROPIE INSTALLER V1.00 " \
-            --ok-label Select --cancel-label Exit-Installer \
-            --menu "DO YOU WANT SCRIPT TO EDIT ES SYSTEMS?" 25 50 30 \
-            1 "DONT EDIT ES SYSTEMS  " \
-            2 "EDIT ES SYSTEMS  " \
-            2>&1 > /dev/tty)
-
-        case "$choice" in
-            1) dont-edit  ;;
-            2) edit-es       ;;
-            -) no ;;
-            *) break       ;;
-        esac
-    done
-}
-
-function dont-edit() {
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
--YOUR ES SYSTEMS HAS BEEN EDITED
--A FOLDER HAS BEEN MADE FOR YOUR GAMES" 0 0
-}
-
-function edit-es() {
-CONTENT1="\t<system>\n\t\t<name>pokitto</name>\n\t\t<fullname>Pokitto</fullname>\n\t\t<path>/home/pi/RetroPie/roms/pokitto</path>\n\t\t<extension>.bin .BIN</extension>\n\t\t<command>pokitto %ROM%</command>\n\t\t<platform>pokitto</platform>\n\t\t<theme>pokitto</theme>\n\t\t</system>"
-C1=$(echo $CONTENT1 | sed 's/\//\\\//g')
-if grep -q "pokitto" "$HOME/.emulationstation/es_systems.cfg"; then echo "es_systems.cfg entry confirmed"
-else
-	sed "/<\/system>/ s/.*/${C1}\n&/" $HOME/.emulationstation/es_systems.cfg > $HOME/temp
-	cat $HOME/temp > $HOME/.emulationstation/es_systems.cfg
-	rm -f $HOME/temp
-fi
+- YOU WILL NEED TO MANUALLY EDIT ES-SYSTEMS.CFG
+- A FOLDER HAS BEEN MADE FOR YOUR GAMES
+THE FOLLOWING IS WGHAT YOU NEED TO ADD TO PES-SYSTEMS.CFG
+   <system>
+    <name>pokitto</name>
+    <fullname>Pokitto</fullname>
+    <path>/home/pi/RetroPie/roms/pokitto</path>
+    <extension>.BIN .bin </extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pokitto %ROM%</command>
+    <platform>pokitto</platform>
+    <theme>pokitto</theme>
+  </system>" 0 0
 }
 
 pokitto-menu
