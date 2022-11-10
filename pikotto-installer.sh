@@ -42,6 +42,7 @@ make
 sleep 1
 cd
 if [ ! -d "$HOME/qjoypad3" ]; then sudo apt-get install qjoypad; fi
+sudo apt-get install sdl1
 sudo mkdir /opt/retropie/configs/pokitto
 mkdir $HOME/RetroPie/roms/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
