@@ -2,5 +2,5 @@
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
 qjoypad "pokitto" &
-cd /home/pi/PokittoEmu-1.0.2
-/home/pi/PokittoEmu-1.0.2/BUILD/PokittoEmu "$1"
+cd /opt/retropie/emulators/pokitto/
+/opt/retropie/emulators/pokitto/BUILD/PokittoEmu "$1"
