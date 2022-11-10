@@ -51,7 +51,7 @@ sudo cp -R $HOME/pokitto /opt/retropie/emulators/
 sudo rm /opt/retropie/emulators/pokitto.zip
 sudo chmod -R 755 /opt/retropie/emulators/pokitto
 cd /opt/retropie/emulators/pokitto
-make
+sudo make
 sleep 1
 cd
 echo "
