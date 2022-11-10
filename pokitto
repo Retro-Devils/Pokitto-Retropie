@@ -1,3 +1,4 @@
 #!/bin/bash
+qjoypad "pokitto" &
 cd /home/pi/PokittoEmu-1.0.2
 /home/pi/PokittoEmu-1.0.2/BUILD/PokittoEmu "$1"
