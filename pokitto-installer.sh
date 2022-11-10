@@ -34,10 +34,11 @@ The development library can be found at the PokittoLib repository." 0 0
 }
 
 function install_pokitto() {
-wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/PokittoEmu-1.0.2.zip
-unzip $HOME/PokittoEmu-1.0.2.zip
-rm $HOME/PokittoEmu-1.0.2.zip
-cd $HOME/PokittoEmu-1.0.2
+wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/PokittoEmu-1.0.2.zip -P /opt/retropie/emulators
+unzip /opt/retropie/emulators/PokittoEmu-1.0.2.zip
+rm /opt/retropie/emulators/PokittoEmu-1.0.2.zip
+sudo chmod -R 755 /opt/retropie/emulators/PokittoEmu-1.0.2
+cd /opt/retropie/emulatorsPokittoEmu-1.0.2
 make
 sleep 1
 cd
