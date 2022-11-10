@@ -26,7 +26,7 @@ function pokitto-menu() {
 
 function info() {
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
-----------------PokittoEmu----------------
+----------------Pokitto   Emu----------------
 
 An emulator for the Pokitto DIY handheld game system.
 
