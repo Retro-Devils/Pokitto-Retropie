@@ -47,7 +47,7 @@ CHECK COMPLETE
 sleep 3
 sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators/
 sudo unzip /opt/retropie/emulators/pokitto.zip
-sudo mv $HOME/pokitto /opt/retropie/emulators/
+sudo cp -R $HOME/pokitto /opt/retropie/emulators/
 sudo rm /opt/retropie/emulators/pokitto.zip
 sudo chmod -R 755 /opt/retropie/emulators/pokitto
 cd /opt/retropie/emulators/pokitto
