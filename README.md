@@ -1,6 +1,6 @@
 # Pokitto-Retropie
 
-A simple installer for Pikitto handheld on Retropie.
+A simple installer for Pokitto handheld on Retropie.
 
 
 
