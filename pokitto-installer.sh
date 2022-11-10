@@ -4,19 +4,19 @@ export NCURSES_NO_UTF8_ACS=1
 ###----------------------------###
 ### INSTALLER MENU FUNCTIONS   ###
 ###----------------------------###
-function pikitto-menu() {
+function pokitto-menu() {
     local choice
 
     while true; do
         choice=$(dialog --backtitle "$BACKTITLE" --title "PIKITTO RETROPIE INSTALLER V1.00 " \
             --ok-label Select --cancel-label Exit-Installer \
             --menu "PIKITTO RETROPIE INSTALLER" 25 50 30 \
-            1 "Install Pikitto  " \
-            2 "Pikitto Emu Info   " \
+            1 "Install Pokitto  " \
+            2 "Pokitto Emu Info   " \
             2>&1 > /dev/tty)
 
         case "$choice" in
-            1) install_pikitto  ;;
+            1) install_pokitto  ;;
             2) info        ;;
             -) no ;;
             *) break       ;;
@@ -33,7 +33,7 @@ An emulator for the Pokitto DIY handheld game system.
 The development library can be found at the PokittoLib repository." 0 0
 }
 
-function install_pikitto() {
+function install_pokitto() {
 wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/PokittoEmu-1.0.2.zip
 unzip $HOME/PokittoEmu-1.0.2.zip
 rm $HOME/PokittoEmu-1.0.2.zip
@@ -65,4 +65,4 @@ dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
 -A FOLDER HAS BEEN MADE FOR YOUR GAMES" 0 0
 }
 
-pikitto-menu
+pokitto-menu
