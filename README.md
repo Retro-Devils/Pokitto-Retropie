@@ -1,7 +1,5 @@
 # Pokitto-Retropie
 
-WORK IN PROGRESS NEARLY DONE
-
 A simple installer for Pikitto handheld on Retropie.
 
 
