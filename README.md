@@ -33,3 +33,29 @@ Why does it look blurry?
 
 - curl -sSL https://bit.ly/Pokitto-Installer | bash
 
+# Qjoypad Mapping 
+
+Please map the following keys to your controller 
+
+Key	Function
+
+Esc	Quit PokittoEmu
+
+F2	Save a screenshot as PNG
+
+F3	Toggle screen recording
+
+F5	Restart
+
+F8	Pause/resume emulation
+
+Arrow keys	D-pad directions
+
+A	A button
+
+S/B	B button
+
+D/C	C button
+
+F	Flash button
+
