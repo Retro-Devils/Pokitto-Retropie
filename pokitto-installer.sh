@@ -34,7 +34,7 @@ The development library can be found at the PokittoLib repository." 0 0
 }
 
 function install_pokitto() {
-wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators
+wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators/
 unzip /opt/retropie/emulators/pokitto.zip
 rm /opt/retropie/emulators/pokitto.zip
 sudo chmod -R 755 /opt/retropie/emulators/pokitto
@@ -51,7 +51,8 @@ wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitt
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
-sudo chmod -R 755 /opt/retropie/configs/pokitto/
+sudo chmod -R 755 /opt/retropie/configs/pokitto/*
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
 sleep 1
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
 - YOU WILL NEED TO MANUALLY EDIT ES-SYSTEMS.CFG
