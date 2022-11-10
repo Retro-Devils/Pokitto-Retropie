@@ -34,6 +34,9 @@ The development library can be found at the PokittoLib repository." 0 0
 }
 
 function install_pokitto() {
+if [ -d "/opt/retropie/emulators/pokitto" ]; then sudo rm -R /opt/retropie/emulators/pokitto; fi
+if [ -d "/opt/retropie/configs/pokitto" ]; then sudo rm -R /opt/retropie/configs/pokitto; fi
+if [ -f "/usr/local/bin/pokitto" ]; then sudo rm -R /usr/local/bin/pokitto; fi
 wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P /opt/retropie/emulators/
 unzip /opt/retropie/emulators/pokitto.zip
 rm /opt/retropie/emulators/pokitto.zip
