@@ -68,7 +68,7 @@ THE FOLLOWING IS WHAT YOU NEED TO ADD TO ES-SYSTEMS.CFG
     <fullname>Pokitto</fullname>
     <path>/home/pi/RetroPie/roms/pokitto</path>
     <extension>.BIN .bin </extension>
-    <command>pokitto %ROM%</command>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pokitto %ROM%</command>
     <platform>pokitto</platform>
     <theme>pokitto</theme>
   </system>" 0 0
