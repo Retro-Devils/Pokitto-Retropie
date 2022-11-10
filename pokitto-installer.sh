@@ -41,6 +41,7 @@ sleep 2
 if [ -d "/opt/retropie/emulators/pokitto" ]; then sudo rm -R /opt/retropie/emulators/pokitto; fi
 if [ -d "/opt/retropie/configs/pokitto" ]; then sudo rm -R /opt/retropie/configs/pokitto; fi
 if [ -f "/usr/local/bin/pokitto" ]; then sudo rm -R /usr/local/bin/pokitto; fi
+if [ -f "$HOME/.qoyjpad3/pokitto.lyt" ]; then sudo rm -R $HOME/.qoyjpad3/pokitto.lyt; fi
 echo "
 CHECK COMPLETE
 -------------------------------------" 
