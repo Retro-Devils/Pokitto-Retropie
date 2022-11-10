@@ -49,6 +49,7 @@ sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/e
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
+sudo chmod -R 755 /opt/retropie/configs/pokitto/
 sleep 1
 CONTENT1="\t<system>\n\t\t<name>pokitto</name>\n\t\t<fullname>Pokitto</fullname>\n\t\t<path>/home/pi/RetroPie/roms/pokitto</path>\n\t\t<extension>.bin .BIN</extension>\n\t\t<command>pokitto %ROM%</command>\n\t\t<platform>pokitto</platform>\n\t\t<theme>pokitto</theme>\n\t\t</system>"
 C1=$(echo $CONTENT1 | sed 's/\//\\\//g')
