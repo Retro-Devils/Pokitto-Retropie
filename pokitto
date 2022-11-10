@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /opt/retropie/emulators/pokitto/
 xset -dpms s off s noblank
 matchbox-window-manager -use_titlebar no -use_cursor no -kbdconfig $md_inst/matchbox_key_shortcuts &
-pokitto "\$1"|xdotool sleep 1 keydown Shift_L+F12 sleep 0.1 keyup Shift_L+F12
 qjoypad "pokitto" &
+cd /opt/retropie/emulators/pokitto/
+/opt/retropie/emulators/b-em-pico-pi/xbeeb -disc "\$1"
