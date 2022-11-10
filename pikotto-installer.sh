@@ -35,7 +35,7 @@ The development library can be found at the PokittoLib repository." 0 0
 
 function install_pikitto() {
 wget https://github.com/Retro-Devils/Pokitto-Retropie/blob/main/PokittoEmu-1.0.2.zip
-unzip PokittoEmu-1.0.2.zip
+unzip $HOME/PokittoEmu-1.0.2.zip
 rm $HOME/PokittoEmu-1.0.2.zip
 cd $HOME/PokittoEmu-1.0.2
 make
