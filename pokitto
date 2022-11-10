@@ -1,6 +1,4 @@
 #!/bin/bash
-xset -dpms s off s noblank
-matchbox-window-manager -use_titlebar no -use_cursor no &
 qjoypad "pokitto" &
 cd /opt/retropie/emulators/pokitto/
-/opt/retropie/emulators/pokitto/PokittoEmu "$1"
+/opt/retropie/emulators/pokitto/BUILD/PokittoEmu "$1"
