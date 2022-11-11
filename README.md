@@ -28,6 +28,9 @@ Why does it look blurry?
 
 - We are working to lower the built in resolution settings. 
 
+# Where do I get games?
+
+- https://www.pokitto.com/games/
 
 # Installation 
 
