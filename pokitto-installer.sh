@@ -50,7 +50,7 @@ sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip 
 sudo unzip $HOME/pokitto.zip
 rm $HOME/pokitto.zip
 cd $HOME/pokitto
-make
+sudo make
 sleep 1
 cd
 sudo cp -R $HOME/pokitto /opt/retropie/emulators/
