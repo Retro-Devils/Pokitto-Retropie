@@ -42,6 +42,7 @@ if [ -d "/opt/retropie/emulators/pokitto" ]; then sudo rm -R /opt/retropie/emula
 if [ -d "/opt/retropie/configs/pokitto" ]; then sudo rm -R /opt/retropie/configs/pokitto; fi
 if [ -f "/usr/local/bin/pokitto" ]; then sudo rm /usr/local/bin/pokitto; fi
 if [ -f "$HOME/.qoyjpad3/pokitto.lyt" ]; then sudo rm $HOME/.qoyjpad3/pokitto.lyt; fi
+if [ -f "$HOME/pokitto.zip" ]; then sudo rm $HOME/pokitto.zip; fi
 echo "
 CHECK COMPLETE
 -------------------------------------" 
