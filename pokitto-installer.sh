@@ -55,7 +55,7 @@ sleep 1
 cd
 sudo cp -R $HOME/pokitto /opt/retropie/emulators/
 sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
-rm -R $HOME/pokitto
+sudo rm -R $HOME/pokitto
 echo "
 Installing/Checking For Dependencies
 -------------------------------------" 
