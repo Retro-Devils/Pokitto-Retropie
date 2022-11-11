@@ -66,6 +66,7 @@ echo "Installing unzip"
 sudo apt-get install -y unzip
 echo "Installing LibSDl2-Net"
 sudo apt-get install -y libsdl2-net-dev
+sudo apt-get install matchbox-window-manager
 if [ ! -d "$HOME/.qjoypad3" ]; then sudo apt-get install qjoypad; fi
 echo "
 -----------------------------
