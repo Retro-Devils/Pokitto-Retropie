@@ -81,16 +81,16 @@ sudo make
 sleep 1
 cd
 sudo cp -R $HOME/pokitto /opt/retropie/emulators/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/
+sudo chmod -R 777 /opt/retropie/emulators/pokitto/
 sudo rm -R $HOME/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto.lyt -P $HOME/.qjoypad3/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
-sudo chmod -R 755 /opt/retropie/configs/pokitto/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/
-sudo chmod 755 /usr/local/bin/pokitto
+sudo chmod -R 777 /opt/retropie/configs/pokitto/
+sudo chmod -R 777 /opt/retropie/emulators/pokitto/
+sudo chmod 777 /usr/local/bin/pokitto
 sleep 1
 else
 echo "
@@ -107,16 +107,16 @@ sudo make
 sleep 1
 cd
 sudo cp -R $HOME/pokitto /opt/retropie/emulators/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/
+sudo chmod -R 777 /opt/retropie/emulators/pokitto/
 sudo rm -R $HOME/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto.lyt -P $HOME/.qjoypad3/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
-sudo chmod -R 755 /opt/retropie/configs/pokitto/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/
-sudo chmod 755 /usr/local/bin/pokitto
+sudo chmod -R 777 /opt/retropie/configs/pokitto/
+sudo chmod -R 777 /opt/retropie/emulators/pokitto/
+sudo chmod 777 /usr/local/bin/pokitto
 sleep 1
 fi
 dialog  --sleep 1 --title "INSTALL COMPLETE" --msgbox "
