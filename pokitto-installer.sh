@@ -48,16 +48,6 @@ echo "
 CHECK COMPLETE
 -------------------------------------" 
 sleep 3
-sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P $HOME/
-sudo unzip $HOME/pokitto.zip
-rm $HOME/pokitto.zip
-cd $HOME/pokitto
-sudo make
-sleep 1
-cd
-sudo cp -R $HOME/pokitto /opt/retropie/emulators/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/
-sudo rm -R $HOME/pokitto
 echo "
 Installing/Checking For Dependencies
 -------------------------------------" 
@@ -72,6 +62,16 @@ echo "Installing Window Manager Stuff"
 sudo apt-get install -y matchbox-window-manager
 apt install libsdl2-image-dev
 sudo apt-get install qjoypad
+sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P $HOME/
+sudo unzip $HOME/pokitto.zip
+rm $HOME/pokitto.zip
+cd $HOME/pokitto
+sudo make
+sleep 1
+cd
+sudo cp -R $HOME/pokitto /opt/retropie/emulators/
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/
+sudo rm -R $HOME/pokitto
 if [ ! -f /usr/bin/startx ]; then
 dialog  --sleep 1 --title "PIXEL DESKTOP NOT INSTALLED !! " --msgbox " 
 INSTALLING NOW" 0 0
