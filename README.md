@@ -40,25 +40,25 @@ Why does it look blurry?
 
 Please map the following keys to your controller 
 
-Key	Function
+Key	        Function In Emu
+---------------------------------------
+Esc         Quit PokittoEmu
 
-Esc	Quit PokittoEmu
+F2          Save a screenshot as PNG
 
-F2	Save a screenshot as PNG
+F3          Toggle screen recording
 
-F3	Toggle screen recording
+F5          Restart
 
-F5	Restart
-
-F8	Pause/resume emulation
+F8          Pause/resume emulation
 
 Arrow keys	D-pad directions
 
-A	A button
+A	          A button
 
-S/B	B button
+S/B         B button
 
-D/C	C button
+D/C	        C button
 
-F	Flash button
+F	          Flash button
 
