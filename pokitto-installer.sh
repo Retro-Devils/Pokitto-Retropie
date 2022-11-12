@@ -62,16 +62,6 @@ echo "Installing Window Manager Stuff"
 sudo apt-get install -y matchbox-window-manager
 apt install libsdl2-image-dev
 sudo apt-get install qjoypad
-sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P $HOME/
-sudo unzip $HOME/pokitto.zip
-rm $HOME/pokitto.zip
-cd $HOME/pokitto
-sudo make
-sleep 1
-cd
-sudo cp -R $HOME/pokitto /opt/retropie/emulators/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/
-sudo rm -R $HOME/pokitto
 if [ ! -f /usr/bin/startx ]; then
 dialog  --sleep 1 --title "PIXEL DESKTOP NOT INSTALLED !! " --msgbox " 
 INSTALLING NOW" 0 0
@@ -83,6 +73,16 @@ Dependencies Install Finished
 -----------------------------"
 sudo mkdir /opt/retropie/configs/pokitto
 mkdir $HOME/RetroPie/roms/pokitto
+sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P $HOME/
+sudo unzip $HOME/pokitto.zip
+rm $HOME/pokitto.zip
+cd $HOME/pokitto
+sudo make
+sleep 1
+cd
+sudo cp -R $HOME/pokitto /opt/retropie/emulators/
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/
+sudo rm -R $HOME/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto.lyt -P $HOME/.qjoypad3/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
@@ -99,6 +99,16 @@ Dependencies Install Finished
 -----------------------------"
 sudo mkdir /opt/retropie/configs/pokitto
 mkdir $HOME/RetroPie/roms/pokitto
+sudo wget https://github.com/Retro-Devils/Pokitto-Retropie/raw/main/pokitto.zip -P $HOME/
+sudo unzip $HOME/pokitto.zip
+rm $HOME/pokitto.zip
+cd $HOME/pokitto
+sudo make
+sleep 1
+cd
+sudo cp -R $HOME/pokitto /opt/retropie/emulators/
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/
+sudo rm -R $HOME/pokitto
 sudo wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/emulators.cfg -P /opt/retropie/configs/pokitto/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto.lyt -P $HOME/.qjoypad3/
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
