@@ -104,8 +104,8 @@ wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitt
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
-sudo chmod -R 755 /opt/retropie/configs/pokitto/*
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
+sudo chmod -R 755 /opt/retropie/configs/pokitto/
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/
 sudo chmod 755 /usr/local/bin/pokitto
 sleep 1
 fi
