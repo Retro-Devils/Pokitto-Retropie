@@ -56,7 +56,7 @@ sudo make
 sleep 1
 cd
 sudo cp -R $HOME/pokitto /opt/retropie/emulators/
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/
 sudo rm -R $HOME/pokitto
 echo "
 Installing/Checking For Dependencies
@@ -88,8 +88,8 @@ wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitt
 wget https://raw.githubusercontent.com/Retro-Devils/Pokitto-Retropie/main/pokitto -P $HOME/
 sudo cp $HOME/pokitto -f /usr/local/bin/pokitto
 rm $HOME/pokitto
-sudo chmod -R 755 /opt/retropie/configs/pokitto/*
-sudo chmod -R 755 /opt/retropie/emulators/pokitto/*
+sudo chmod -R 755 /opt/retropie/configs/pokitto/
+sudo chmod -R 755 /opt/retropie/emulators/pokitto/
 sudo chmod 755 /usr/local/bin/pokitto
 sleep 1
 else
