@@ -60,7 +60,7 @@ echo "Installing LibSDl2-Net"
 sudo apt-get install -y libsdl2-net-dev
 echo "Installing Window Manager Stuff"
 sudo apt-get install -y matchbox-window-manager
-apt install libsdl2-image-dev
+sudo apt install libsdl2-image-dev
 sudo apt-get install qjoypad
 if [ ! -f /usr/bin/startx ]; then
 dialog  --sleep 1 --title "PIXEL DESKTOP NOT INSTALLED !! " --msgbox " 
