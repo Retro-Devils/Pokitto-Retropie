@@ -14,9 +14,9 @@ Pokitto Emu Updated:     11/11/22
 
 # CREDITS 
 
-ALL CREDIT GOES TO:
+ALL CREDIT GOES TO:  FManga
 
-https://github.com/felipemanga/PokittoEmu
+His github is here: https://github.com/felipemanga/PokittoEmu
 
 We simply made a script to do his stuff to RetroPie.
 
@@ -26,47 +26,49 @@ We simply made a script to do his stuff to RetroPie.
 
 Whats game extensions? 
 
-- ATM only bin worked. Tested .bin and .pop
+- .bin , .BIN , .pop & .POP
 
 Why make this at all? 
 
 - Someone asked & more systems the better . 
 
-Why does it look blurry?
+Why is the screen small?
 
-- We are working to lower the built in resolution settings. 
+- The emulator has a built in resolution. Lower Retropie settings to make biggeron your screen lol.
 
 # Where do I get games?
 
 - https://www.pokitto.com/games/
 
+- https://archive.org/details/pokitto-games
+
 # Installation 
 
 - curl -sSL https://bit.ly/Pokitto-Installer | bash
 
-# Qjoypad Mapping 
+# Qjoypad Mappings
 
 Please map the following keys to your controller 
 
-Key	        Function In Emu
+Key ------------- Function In Emu
 ---------------------------------------
-Esc         Quit PokittoEmu
+Esc ------------- Quit PokittoEmu
 
-F2          Save a screenshot as PNG
+F2 -------------- Save a screenshot as PNG
 
-F3          Toggle screen recording
+F3 -------------- Toggle screen recording
 
-F5          Restart
+F5 -------------- Restart
 
-F8          Pause/resume emulation
+F8 -------------- Pause/resume emulation
 
-Arrow keys	D-pad directions
+Arrow keys ------ D-pad directions
 
-A	          A button
+A --------------  A button
 
-S/B         B button
+S/B ------------- B button
 
-D/C	        C button
+D/C ------------- C button
 
-F	          Flash button
+F --------------- Flash button
 
