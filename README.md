@@ -78,22 +78,22 @@ F --------------- Flash button
 - ATM you will need to add the following to es-systems.cfg
 
 
-"   
-    <system>
+
+          <system>
     
-    <name>pokitto</name>
+          <name>pokitto</name>
     
-    <fullname>Pokitto</fullname>
+          <fullname>Pokitto</fullname>
     
-    <path>/home/pi/RetroPie/roms/pokitto</path>
+          <path>/home/pi/RetroPie/roms/pokitto</path>
     
-    <extension>.BIN .bin .pop .POP</extension>
+          <extension>.BIN .bin .pop .POP</extension>
     
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pokitto %ROM%</command>
+          <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pokitto %ROM%</command>
     
-    <platform>pokitto</platform>
+          <platform>pokitto</platform>
     
-    <theme>pokitto</theme>
+          <theme>pokitto</theme>
     
-    </system> 
+          </system> 
 
