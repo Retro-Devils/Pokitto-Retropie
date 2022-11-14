@@ -78,7 +78,8 @@ F --------------- Flash button
 - ATM you will need to add the following to es-systems.cfg
 
 
-"   <system>
+"   
+    <system>
     
     <name>pokitto</name>
     
