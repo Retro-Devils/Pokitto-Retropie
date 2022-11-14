@@ -32,7 +32,7 @@ Why make this at all?
 
 Why is the screen small?
 
-- The emulator has a built in resolution. Lower Retropie settings to make biggeron your screen lol.
+- The emulator has a built in resolution. Lower Retropie pokitto resolution (press a while loading game). This will make it bigger on your screen lol.
 
 # Where do I get games?
 
