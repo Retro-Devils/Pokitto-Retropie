@@ -10,19 +10,13 @@ A simple installer for Pokitto handheld on Retropie.
           
 # Emu Info:
 
+          Creator:         FManga 
+          
+          Github Link:     https://github.com/felipemanga/PokittoEmu
+
           Version:         1.03 
 
           Last Update:     11/11/22
-
-
-
-# CREDITS 
-
-ALL CREDIT GOES TO:  FManga
-
-His github is here: https://github.com/felipemanga/PokittoEmu
-
-We simply made a script to do his stuff to RetroPie.
 
 
 
