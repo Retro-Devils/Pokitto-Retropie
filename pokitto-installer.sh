@@ -8,9 +8,9 @@ function pokitto-menu() {
     local choice
 
     while true; do
-        choice=$(dialog --backtitle "$BACKTITLE" --title "POKITTO RETROPIE INSTALLER V1.00 " \
+        choice=$(dialog --backtitle "$BACKTITLE" --title "POKITTO RETROPIE INSTALLER V1.02 " \
             --ok-label Select --cancel-label Exit-Installer \
-            --menu "PIKITTO RETROPIE INSTALLER" 25 50 30 \
+            --menu "PIKITTO RETROPIE INSTALLER" 25 40 30 \
             1 "Install Pokitto  " \
             2 "Pokitto Emu Info   " \
             2>&1 > /dev/tty)
