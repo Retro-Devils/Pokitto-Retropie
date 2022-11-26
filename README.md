@@ -4,9 +4,9 @@ A simple installer for Pokitto handheld on Retropie.
 
 # Installer Info:
 
-          Version:          1.02
+          Version:          1.04
 
-          Last Update:      11/13/22
+          Last Update:      11/25/22
           
 # Emu Info:
 
@@ -14,9 +14,9 @@ A simple installer for Pokitto handheld on Retropie.
           
           Github Link:     https://github.com/felipemanga/PokittoEmu
 
-          Version:         1.03 
+          Version:         1.04
 
-          Last Update:     11/11/22
+          Last Update:     11/25/22
 
 
 
