@@ -94,7 +94,7 @@ sleep 1
 else
 echo "
 -----------------------------
-Dependencies Install Finished
+EMU Install Finished
 -----------------------------"
 sudo mkdir /opt/retropie/configs/pokitto
 mkdir $HOME/RetroPie/roms/pokitto
